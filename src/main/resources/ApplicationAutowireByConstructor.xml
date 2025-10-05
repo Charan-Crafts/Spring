@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="studentDetails" class="com.autowireByConstructor.StudentDetails">
+        <property name="studentName" value="Charan"/>
+        <property name="studentRollNumber" value="23691F0030"/>
+    </bean>
+
+    <bean id="student" class="com.autowireByConstructor.Student" autowire="constructor"/>
+
+</beans>
