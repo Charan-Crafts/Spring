@@ -6,11 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContextBean.xml");
 
-        FirstBean bean =(FirstBean) context.getBean("myBean");
+        ApplicationContext context = new ClassPathXmlApplicationContext();
 
-        System.out.println(bean);
+        FirstBean firstBean = (FirstBean) context.getBean("firstBean");
     }
-
 }

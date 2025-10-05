@@ -6,8 +6,9 @@
 
     <!-- bean definitions here -->
 
-    <bean id="myBean" class="com.spring.FirstBean">
-        <property name="message" value="Charan">
+    <bean id="firstBean" class="com.spring.FirstBean">
+        <property name="message" value="Hello charan this is first Bean">
+
         </property>
     </bean>
 

@@ -2,7 +2,7 @@ package com.spring;
 
 public class FirstBean {
 
-    private String message;
+    private  String message ;
 
     public String getMessage() {
         return message;
