@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="mongo" class="com.challenge1.Mongo">
+
+    </bean>
+
+    <bean id="mysql" class="com.challenge1.Mysql">
+
+    </bean>
+
+    <bean id ="postgres" class="com.challenge1.Postgres">
+
+    </bean>
+
+    <bean id="mysqlManager" class="com.challenge1.Manager">
+        <constructor-arg ref="mysql"/>
+    </bean>
+
+    <bean id="mongoManager" class="com.challenge1.Manager">
+        <constructor-arg ref="mongo"/>
+    </bean>
+
+    <bean id="postgresManager" class="com.challenge1.Manager">
+        <constructor-arg ref="postgres"/>
+    </bean>
+</beans>
